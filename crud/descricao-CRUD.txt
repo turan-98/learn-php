@@ -1,0 +1,3 @@
+Conexão com o Banco de Dados 
+onde faço uma query para buscar o nome
+de filmes e retorna a busca em uma Ul
