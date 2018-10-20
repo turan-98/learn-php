@@ -92,23 +92,23 @@ $portifolio = array(array('titulo' => 'Accordion de Imagens',
 					'url' =>  'https://sammy08.github.io/GitPages/my-site-home/index.html',
 					'ano' => '2018'));
 $habilidades = array('hmtl' => 100, 'css' => 100, 'php' => 80, 'javascript' => 80,'Bootstrap' => 70,'jQuery' => 80,
-					'Sass' => 100, 'Git' => 50, 'MySql' => 50, 'Design Responsivo' => 95, 'Ruby' => 40, 'Python' => 80,'Linux' => 80);
-
+					'Sass' => 100, 'Git' => 50, 'MySql' => 50, 'Design Responsivo' => 95, 'Ruby' => 40, 'Python' => 80,
+					 'Linux' => 80);
 ?>
-	<h1><?= $nome ?></h1>
-	<p><?= $profissao .'&mdash;'. $especialidade ?></p>
-	<h2>Contato</h2>
-	<ul>
-		<?php foreach($contato as $canal => $url): ?>
-			<!--usamos chaves de array para pegar o link do canal-->
-			<li><a href="<?= $url ?>"><?= $canal ?></a></li>
-		<?php endforeach; ?>
-	</ul>
-	<h2>Formação</h2>
-		<?php foreach($formacao as $curso): ?>
-			<h3><?= $curso['ocupacao'] ?></h3>
-			<p><?= $curso['inicio'] . ' &mdash;' . $curso['termino'] .''. $curso['instituicao']?></p>
-		<?php endforeach; ?>
+<h1><?= $nome ?></h1>
+<p><?= $profissao .'&mdash;'. $especialidade ?></p>
+<h2>Contato</h2>
+<ul>
+	<?php foreach($contato as $canal => $url): ?>
+		<!--usamos chaves de array para pegar o link do canal-->
+		<li><a href="<?= $url ?>"><?= $canal ?></a></li>
+	<?php endforeach; ?>
+</ul>
+<h2>Formação</h2>
+	<?php foreach($formacao as $curso): ?>
+		<h3><?= $curso['ocupacao'] ?></h3>
+		<p><?= $curso['inicio'] . ' &mdash;' . $curso['termino'] .''. $curso['instituicao']?></p>
+	<?php endforeach; ?>
 </body>
 </html>
 
