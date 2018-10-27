@@ -1,0 +1,29 @@
+@mixin radius($value){
+  webkit-border-radius:$value;
+  -moz-border-radius:$value;
+  border-radius:$value;
+}
+.img-item{
+	@include radius(55%);
+	width:20%;
+}
+.o-img{
+	@include radius(15px);
+	max-width:100%;
+	overflow:hidden;
+}
+figure{
+  	display: flex;
+  	flex-flow: column wrap;
+  	margin-bottom:5%; 
+  	justify-content: center;
+  	width: 100%;
+}
+.container-hr{
+  	display: flex;
+  	justify-content: center;
+}
+hr{
+  	color:#336;
+  	width: 35%;
+}
