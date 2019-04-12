@@ -75,5 +75,4 @@ class aluno {
 		$this->horario = $horarioCurso;
 	}
 }
-
 ?>
