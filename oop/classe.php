@@ -9,9 +9,6 @@ class aluno {
 			function recebeAluno() {
 			$this->nome = $_POST['nome'];
 			$this->email = $_POST['email'];
-				$nome_aluno = addslashes($this->nome);
-				$email_aluno = addslashes($this->email);
-	
 				function recebeCurso() {
 					$cursoMateria = $_POST['selectCurso'];
 					switch ($cursoMateria) {
@@ -52,7 +49,6 @@ class aluno {
 					}
 					$this->curso = $cursoMateria;
 				}
-
 		}
 				function recebeHorario() {
 				$horarioCurso = $_POST['turnoCurso'];
@@ -70,13 +66,6 @@ class aluno {
 				}
 				$this->horario = $horarioCurso;
 			}
-
-	
-
 	}
-
-	
-
-	
 }
 ?>
