@@ -37,6 +37,7 @@ class aluno {
 			function setCurso()
 			{
 				switch ($cursoMateria) {
+						
 					case 'Design Responsivo':
 						$cursoMateria = 'Design Responsivo';
 						break;
