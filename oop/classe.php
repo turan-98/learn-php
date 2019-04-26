@@ -6,12 +6,37 @@ class aluno {
 	public $curso;
 	public $horario;
 		function __construct(){
-			function recebeAluno() {
-			$this->nome = $_POST['nome'];
-			$this->email = $_POST['email'];
-				function recebeCurso() {
-					$cursoMateria = $_POST['selectCurso'];
-					switch ($cursoMateria) {
+			
+			function getNome()
+			{
+				return $this->nome = $_POST['nome'];
+			}
+			function getEmail()
+			{
+				return $this->email = $_POST['email'];
+			}
+			function getCurso()
+			{
+				return $cursoMateria = $_POST['selectCurso'];
+			}
+			function getHorario()
+			{
+				return $horarioCurso = $_POST['turnoCurso'];
+			}
+			
+			function setNome()
+			{
+				$this->nome = $nome;
+			}
+			
+			function setEmail()
+			{
+				$this->email = $email;
+			}
+			
+			function setCurso()
+			{
+				switch ($cursoMateria) {
 					case 'Design Responsivo':
 						$cursoMateria = 'Design Responsivo';
 						break;
@@ -47,25 +72,24 @@ class aluno {
 						break;
 
 					}
-					$this->curso = $cursoMateria;
-				}
-		}
-				function recebeHorario() {
-				$horarioCurso = $_POST['turnoCurso'];
-				switch ($horarioCurso) {
-				case 'diurno':
-					$horarioCurso = 'diurno';
-					break;
-				case 'matutino':
-					$horarioCurso = 'matutino';
-					break;
-				case 'noturno':
-					$horarioCurso = 'noturno';
-					break;
+				$this->curso = $cursoMateria;
+			}
+				function setHorario() 
+				{
+					switch ($horarioCurso) 
+					{
+					case 'diurno':
+						$horarioCurso = 'diurno';
+						break;
+					case 'matutino':
+						$horarioCurso = 'matutino';
+						break;
+					case 'noturno':
+						$horarioCurso = 'noturno';
+						break;
 
-				}
+					}
 				$this->horario = $horarioCurso;
 			}
-	}
 }
 ?>
