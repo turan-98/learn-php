@@ -8,7 +8,7 @@ class aluno {
 	function __construct() {
 
 		function getNome() {
-			return $this->nome = $_POST['nome'];
+			return $this->nome;
 		}
 		function getEmail() {
 			return $this->email = $_POST['email'];
@@ -20,15 +20,15 @@ class aluno {
 			return $horarioCurso = $_POST['turnoCurso'];
 		}
 
-		function setNome() {
+		function setNome($nome) {
 			$this->nome = $nome;
 		}
 
-		function setEmail() {
+		function setEmail($email) {
 			$this->email = $email;
 		}
 
-		function setCurso() {
+		function setCurso($curso) {
 			switch ($cursoMateria) {
 
 			case 'Design Responsivo':
@@ -68,7 +68,7 @@ class aluno {
 			}
 			$this->curso = $cursoMateria;
 		}
-		function setHorario() {
+		function setHorario($horario) {
 			switch ($horarioCurso) {
 			case 'diurno':
 				$horarioCurso = 'diurno';
