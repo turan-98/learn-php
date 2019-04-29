@@ -16,10 +16,10 @@ $aluno = new aluno();
 	<div class="card carding">
 		<div class="card-body">
 			<h1 class="card-title text-center">Parabéns !!!</h1>
-			<h4>Aluno(a) <?=$aluno->nome;?></h4> <p>esta matriculado no curso </p>
-			<h4><?=$aluno->curso;?></h4>
+			<h4>Aluno(a) <?=$aluno->setNome($_POST['nome']);?></h4> <p>esta matriculado no curso </p>
+			<h4><?=$aluno->setcurso($_POST['curso']);?></h4>
 			<p>No periodo </p>
-			<h4><?=$aluno->horario;?></h4>
+			<h4><?=$aluno->sethorario($_POST['horario']);?></h4>
 	</div>
 </div>
 </body>
