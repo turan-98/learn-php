@@ -11,10 +11,10 @@ class aluno {
 			return $this->nome;
 		}
 		function getEmail() {
-			return $this->email = $_POST['email'];
+			return $this->email;
 		}
 		function getCurso() {
-			return $cursoMateria = $_POST['selectCurso'];
+			return $this -> curso;
 		}
 		function getHorario() {
 			return $horarioCurso = $_POST['turnoCurso'];
