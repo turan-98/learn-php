@@ -14,10 +14,10 @@ class aluno {
 			return $this->email;
 		}
 		function getCurso() {
-			return $this -> curso;
+			return $this->curso;
 		}
 		function getHorario() {
-			return $horarioCurso = $_POST['turnoCurso'];
+			return $this->horario
 		}
 
 		function setNome($nome) {
