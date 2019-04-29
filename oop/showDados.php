@@ -17,9 +17,9 @@ $aluno = new aluno();
 		<div class="card-body">
 			<h1 class="card-title text-center">Parabéns !!!</h1>
 			<h4>Aluno(a) <?=$aluno->setNome($_POST['nome']);?></h4> <p>esta matriculado no curso </p>
-			<h4><?=$aluno->setcurso($_POST['selectCurso'];);?></h4>
+			<h4><?=$aluno->setCurso($_POST['selectCurso']);?></h4>
 			<p>No periodo </p>
-			<h4><?=$aluno->sethorario($_POST['horario']);?></h4>
+			<h4><?=$aluno->setHorario($_POST['turnoCurso']);?></h4>
 	</div>
 </div>
 </body>
