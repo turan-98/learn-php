@@ -1,6 +1,8 @@
 <?php
 require_once 'classe.php';
+$nome = $_POST['nome'];
 $aluno = new aluno();
+$aluno->setNome($nome);
 
 /*
 	if (isset($_POST['nome'] && !empty($_POST['nome']) {
@@ -26,7 +28,7 @@ $aluno = new aluno();
 		<div class="card-body">
 			/*  <h2><?php echo $nome; ?></h2> */
 			<h1 class="card-title text-center">Parabéns !!!</h1>
-			<h4>Aluno(a) <?=$aluno->setNome();?></h4> <p>esta matriculado no curso </p>
+			<h4>Aluno(a) <?=$aluno->getNome();?></h4> <p>esta matriculado no curso </p>
 			<h4><?=$aluno->setCurso($_POST['selectCurso']);?></h4>
 			<p>No periodo </p>
 			<h4><?=$aluno->setHorario($_POST['turnoCurso']);?></h4>
