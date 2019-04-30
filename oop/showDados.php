@@ -1,6 +1,15 @@
 <?php
 require_once 'classe.php';
 $aluno = new aluno();
+
+/*
+	if (isset($_POST['nome'] && !empty($_POST['nome']) {
+			$nome = $_POST['nome'];
+	} else {
+			$nome = "NÃO TEM NADA!!!";
+	}
+*/
+//echo $nome;
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,8 +24,9 @@ $aluno = new aluno();
 <body>
 	<div class="card carding">
 		<div class="card-body">
+			/*  <h2><?php echo $nome; ?></h2> */
 			<h1 class="card-title text-center">Parabéns !!!</h1>
-			<h4>Aluno(a) <?=$aluno->setNome($_POST['nome']);?></h4> <p>esta matriculado no curso </p>
+			<h4>Aluno(a) <?=$aluno->setNome();?></h4> <p>esta matriculado no curso </p>
 			<h4><?=$aluno->setCurso($_POST['selectCurso']);?></h4>
 			<p>No periodo </p>
 			<h4><?=$aluno->setHorario($_POST['turnoCurso']);?></h4>
