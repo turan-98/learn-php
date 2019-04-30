@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <form action="classe.php" method="POST">
+  <form action="showDados.php" method="POST">
     <div class="form-group row justify-content-center">
         <div class="col-md-2"></div>
           <label for="InputNome" class="col-md-1 col-form-label lbl">Nome</label>
