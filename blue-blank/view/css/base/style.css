@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
+body {
+  display: grid;
+  font-family: 'Roboto', sans-serif;
+  grid-gap: 1rem;
+  grid-template-areas: "header header header" "main main main" "container container container" "footer footer footer";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto 100vh auto;
+  background: #3498DB;
+}
+
+.o-header {
+  display: flex;
+  grid-area: header;
+  padding: 0.30rem;
+}
+.o-header:first-child {
+  font-weight: 800;
+  justify-content: flex-end;
+}
+
+.o-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-area: main;
+}
+
+.o-footer {
+  grid-area: footer;
+}
+
+.form-container {
+  background: #2980B9;
+  color: white;
+  max-width: 80%;
+  max-height: 85%;
+  padding: 2rem;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.logo-hero {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.fab {
+  color: white;
+  font-size: 4rem;
+}
+
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  left: -200px;
+  background: #121219;
+}
+
+.sidebar.active {
+  left: 0px;
+}
+
+.link {
+  text-decoration: none !important;
+  color: gray;
+}
+.link:hover {
+  color: rgba(230, 230, 230, 0.9) !important;
+}
+
+.sidebar ul li {
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+.sidebar .fas {
+  position: absolute;
+  left: 220px;
+  top: 10px;
+  cursor: pointer;
+  transition: .4s;
+  font-size: 1.4rem;
+}
+.sidebar .fas:hover {
+  color: whitesmoke;
+  transition: .4s;
+}
+
+@media only screen and (max-width: 768px) {
+  .form-container {
+    background: none;
+  }
+}
